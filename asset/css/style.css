@@ -107,7 +107,6 @@ h2 {
     border-radius: 10px;
     border: 5px solid white;
     z-index: 20;
-    /* height: 100vh; */
     margin-top: -10px;
 }
 
@@ -131,4 +130,88 @@ h2 {
 /* *section rooms */
 /* boxen mit display:flex ausrichten */
 /* inhalt der boxen auch mit display:flex und padding/ margin ausrichten */
+
+.rooms {
+    text-align: center;
+    padding: 0 62px;
+}
+
+.rooms-content {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    height: 57vh;
+    /* height: 40vh; */
+}
+.room-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("../img/standard_twin_room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -5px 0px;
+    flex-basis: 50%;
+    border-radius: 10px;
+    padding: 54px;
+}
+.room-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("../img/standard_room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -5px 0px;
+    flex-basis: 50%;
+    border-radius: 10px;
+    padding: 54px;
+}
+.room-box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("../img/standard_view_room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -5px 0px;
+    flex-basis: 50%;
+    border-radius: 10px;
+    padding: 54px;
+}
+.room-box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("../img/deluxe_room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -5px 0px;
+    flex-basis: 50%;
+    border-radius: 10px;
+    padding: 54px;
+}
+
+.get-room {
+    text-align: center;
+}
+
+.rooms-content p {
+    font-family: "ubuntu-medium";
+    color: white;
+    font-size: 40px;
+    line-height: 200%;
+}
+
 /* ! FOOTER */
