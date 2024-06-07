@@ -1,5 +1,25 @@
 /* BASIC STYLING */
 
+@font-face {
+    font-family: "ubuntu-light";
+    src: url("../fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+    font-family: "ubuntu-bold";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+    font-family: "ubuntu-regular";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ubuntu-medium";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +36,99 @@ a {
 }
 
 .wrapper {
-    /* background-color: #cccccc;
-    padding: 0 100px 0 100px; */
+    font-family: "ubuntu-regular";
 }
 
 /* ! HEADER */
 
+.navigation {
+    text-align: center;
+    padding-top: 54px;
+}
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 76px;
+    margin-bottom: 100px;
+}
+
+nav a {
+    font-size: 24px;
+    color: #957554;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/hero_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-top: 320px;
+    height: 70vh;
+}
+
+.welcome h1 {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+.welcome p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: #dfaa5b;
+    padding: 24px;
+    border-radius: 10px;
+    width: 300px;
+}
 /* ! MAIN */
 
+/* *Styling der h2  */
+h2 {
+    font-size: 45px;
+    color: #957554;
+    line-height: 140px;
+}
+
+/* *section facilities  */
+.facilities {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 5px solid white;
+    z-index: 20;
+    /* height: 100vh; */
+    margin-top: -10px;
+}
+
+/* displax flex  */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+}
+
+.icon-box img {
+    margin-b: 20px;
+}
+
+.icon-box p {
+    color: #957554;
+    font-size: 24px;
+    line-height: 180%;
+}
+
+/* *section rooms */
+/* boxen mit display:flex ausrichten */
+/* inhalt der boxen auch mit display:flex und padding/ margin ausrichten */
 /* ! FOOTER */
