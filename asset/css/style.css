@@ -39,25 +39,53 @@ a {
     font-family: "ubuntu-regular";
 }
 
+li {
+    list-style: none;
+}
+
 /* ! HEADER */
 
 .navigation {
     text-align: center;
     padding-top: 54px;
 }
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.image {
+    margin-bottom: 0;
+}
+
+.search {
+    width: 18px;
+    height: auto;
+}
+
+/* * Navbar mit position:sticky und top:0  */
 nav {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    padding-top: 76px;
-    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: sticky;
+    top: 0;
+    /* opacity: 0.5; */
+    height: 60px;
+    /* width: 100vw; */
 }
 
 nav a {
     font-size: 24px;
     color: #957554;
+    z-index: 20;
 }
+
+/* header img {
+    margin-bottom: 200px;
+} */
 
 .welcome {
     display: flex;
@@ -68,12 +96,15 @@ nav a {
     background-size: cover;
     text-align: center;
     color: white;
-    padding-top: 320px;
+    padding: 50px;
+    justify-content: end;
     height: 70vh;
 }
 
 .welcome h1 {
-    font-size: 80px;
+    font-size: clamp(60px, 6vw, 80px);
+
+    /* font-size: 80px; */
     margin-bottom: 15px;
 }
 .welcome p {
@@ -117,14 +148,19 @@ h2 {
     gap: 15vw;
 }
 
+.icon-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .icon-box img {
-    margin-b: 20px;
+    margin-bottom: 20px;
 }
 
 .icon-box p {
     color: #957554;
     font-size: 24px;
-    line-height: 180%;
+    width: 50px;
 }
 
 /* *section rooms */
@@ -140,7 +176,7 @@ h2 {
     display: flex;
     /* align-items: center; */
     flex-direction: column;
-    gap: 10vw;
+    gap: 3vw;
 }
 
 .box-row {
@@ -202,16 +238,85 @@ h2 {
     border-radius: 10px;
     padding: 54px;
 }
-
-.get-room {
-    text-align: center;
-}
+/* * section get-room */
 
 .rooms-content p {
     font-family: "ubuntu-medium";
     color: white;
     font-size: 40px;
-    line-height: 200%;
+    /* line-height: 200%; */
+    margin-bottom: 30px;
+}
+
+.get-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
 }
 
 /* ! FOOTER */
+footer {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    height: 40vh;
+    padding: 60px;
+    justify-content: space-between;
+}
+
+.about-us a {
+    color: white;
+    font-size: 24px;
+}
+
+.about-us li {
+    margin-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address p {
+    font-family: "ubuntu-light";
+}
+
+.address img {
+    height: auto;
+    width: 10vw;
+}
+
+/* .subcribe {
+    display: flex;
+    flex-direction: column;
+} */
+.subcribe label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#email {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: "ubuntu-light";
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 300px;
+}
+#subcribe-btn {
+    display: block;
+    border-radius: 10px;
+    border: none;
+    font-family: "ubuntu-light";
+    font-size: 20px;
+    background-color: #dfaa5b;
+    color: white;
+    padding: 14px;
+    width: 300px;
+}

@@ -4,31 +4,40 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./asset/css/style.css" />
-        <title>Document</title>
+        <title>Hotel Bon</title>
     </head>
     <body>
         <div class="wrapper">
-            <!-- Header -->
-            <header>
-                <div class="navigation">
-                    <img
-                        src="./asset/img/logo_header.png"
-                        alt="Logo Bon Hotel"
-                    />
-                    <nav>
-                        <a href="#">Our Hotel</a>
-                        <a href="#">Rooms & Rates</a>
-                        <a href="#">Facilities</a>
-                        <a href="#">Contact Us</a>
-                        <img src="./asset/img/bi_search.png" alt="Lupe" />
-                    </nav>
-                </div>
-                <section class="welcome">
-                    <h1>WELCOME TO BON HOTEL</h1>
-                    <p>Good people. Good thinking. Good feeling.</p>
-                    <a class="btn" href="#">EXPLORE</a>
-                </section>
-            </header>
+            <!-- * Navbar Position:sticky  -->
+            <div class="navigation">
+                <img
+                    class="logo"
+                    src="./asset/img/logo_header.png"
+                    alt="Logo Bon Hotel"
+                />
+                <nav>
+                    <a href="#">Our Hotel</a>
+                    <a href="#">Rooms & Rates</a>
+                    <a href="#">Facilities</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#"
+                        ><img
+                            class="search"
+                            src="./asset/img/bi_search.png"
+                            alt="Lupe"
+                    /></a>
+                </nav>
+                <!-- Header -->
+                <header>
+                    <section class="welcome">
+                        <h1>WELCOME TO BON HOTEL</h1>
+                        <p>Good people. Good thinking. Good feeling.</p>
+                        <a class="btn" href="#">EXPLORE</a>
+                    </section>
+                </header>
+                <!-- * Klasse Navigation wird hier geschlossen -->
+            </div>
+            <!-- * bis hier ist die NavBar sichtbar -->
             <!-- Main -->
             <main>
                 <section class="facilities">
@@ -43,19 +52,19 @@
                         </div>
                         <div class="icon-box">
                             <img src="./asset/img/icon_pool.png" alt="pool" />
-                            <p>Kitchen</p>
+                            <p>Pool</p>
                         </div>
                         <div class="icon-box">
                             <img src="./asset/img/icon_wifi.png" alt="wifi" />
-                            <p>Kitchen</p>
+                            <p>Wifi</p>
                         </div>
                         <div class="icon-box">
                             <img src="./asset/img/icon_fitness.png" alt="gym" />
-                            <p>Kitchen</p>
+                            <p>Gym</p>
                         </div>
                         <div class="icon-box">
                             <img src="./asset/img/icon_taxi.png" alt="taxi" />
-                            <p>Kitchen</p>
+                            <p>Taxi</p>
                         </div>
                     </article>
                 </section>
@@ -86,25 +95,31 @@
                 </section>
                 <section class="get-room">
                     <h2>Get a room already!</h2>
-                    <a class="btn" href="#">Check Rates</a>
+                    <a class="btn" href="#">Book Now</a>
                 </section>
             </main>
             <!-- Footer -->
             <footer>
                 <div class="address">
-                    <h3>Bon Hotels Head Office</h3>
-                    <p>+27 434 344 432</p>
-                    <p>info@bonhotels.com</p>
+                    <img
+                        src="./asset/img/logo_footer.png"
+                        alt="Icon Hotel Bon"
+                    />
+                    <div>
+                        <h3>Bon Hotels Head Office</h3>
+                        <p>+27 434 344 432</p>
+                        <p>info@bonhotels.com</p>
+                    </div>
                 </div>
                 <div class="about-us">
-                    <a href="#">Our Conferencing</a>
-                    <a href="#">Our Hotels</a>
-                    <a href="#">Our Company</a>
-                    <a href="#">Hotel Design</a>
-                    <a href="#">Careers</a>
+                    <li><a href="#">Our Conferencing</a></li>
+                    <li><a href="#">Our Hotels</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Hotel Design</a></li>
+                    <li><a href="#">Careers</a></li>
                 </div>
                 <div class="subcribe">
-                    <h4>Subcribe for Offers</h4>
+                    <label for="email">Subcribe for Offers</label>
                     <form action="">
                         <input
                             type="email"
@@ -112,7 +127,11 @@
                             id="email"
                             placeholder="Email Address"
                         />
-                        <input class="btn" type="submit" value="Subcribe Now" />
+                        <input
+                            id="subcribe-btn"
+                            type="submit"
+                            value="Subcribe Now"
+                        />
                     </form>
                 </div>
             </footer>
